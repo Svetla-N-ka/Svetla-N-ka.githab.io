@@ -2,46 +2,60 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Главная</title>
+        <h1>Макромир</h1>
 </head>
 
 <body>
 
-   <header>
-    <h1>Макромир</h1>
-    <title></title>
+<header>
+        <title></title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../Site.Novichkova/style/stile2.css">
+</header> 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Pacifico&display=swap" rel="stylesheet">
+<main>
+        <p class="yellow" id="darkYellow">
+    Как же мало видят наши глаза... Если погрузиться в макрофотографию, можно увидеть новую вселенную и завораживающие виды, как из фантастического фильма. Откройте для себя скрытую красоту обыденных вещей через макросъёмку на телефон.
+        </p>
     
-    <link rel="stylesheet" href="../Site.Novichkova/style/stile2.css">
-   </header> 
+        <img src="img/15.jpg" alt="ящерица">
 
-   <main>
-<p class="yellow" id="darkYellow">
-    Как же мало видят наши глаза... Если погрузиться в макрофотографию, можно увидеть новую вселенную и завораживающие виды, как из фантастического фильма.
-Откройте для себя скрытую красоту обыденных вещей через макросъёмку на телефон.
-</p>
+        <h2>
+            <form asp-action="SubmitRegistration" method="post">
+                    <!-- Поле имени -->
+                <label asp-for="FullName"></label>ФИО<br/>
+                <input asp-for="FullName"/><br/><br/>
+                    <!-- Поле электронной почты -->
+                <label asp-for="EmailAddress"></label>E-mail<br/>
+                <input asp-for="EmailAddress"/><br/><br/>
+                    <!-- Выбор роли (участник/сpeaker) -->
+                <label asp-for="IsSpeaker"></label><br/>
+                <input asp-for="IsSpeaker" type="checkbox"/><br/><br/>
+                <!-- Кнопка отправки -->
+                <button type="submit">Зарегистрироваться</button>
+            </form>
+        </h2>
 
-<img src="img/15.jpg" alt="ящерица">
+    <div>
+        <p class="yellow">
+    Я хочу, чтобы каждый мог создавать великолепные макрофотографии с помощью своего телефона. Моя цель — предоставить вам знания, инструменты и вдохновение, чтобы ваш смартфон стал мощным устройством для макросъёмки.  
+        </p>
+    <div class="list">
+         <ul>
+            <li><a href="https://school.naturephoto.team/articles/tpost/83efo5fvn1-makrosyomka-nasekomih-chudesnaya-strana?ver=1.33_1764767975748">Макросъёмка насекомых: чудесная страна жуков Надава Багима</li>
+            <li><a href="https://macromir-photo.tilda.ws/#rec906582418">Мой сайт</a></li>
+         </ul>
 
-<div>
-    <p class="yellow">
-    Я хочу, чтобы каждый мог создавать великолепные макрофотографии с помощью своего телефона. Моя цель — предоставить вам знания, инструменты и вдохновение, чтобы ваш смартфон стал мощным устройством для макросъёмки.
-    </p>
-<div class="list">
-    <ul>
-        <li><a href="https://school.naturephoto.team/articles/tpost/83efo5fvn1-makrosyomka-nasekomih-chudesnaya-strana?ver=1.33_1764767975748">Макросъёмка насекомых: чудесная страна жуков Надава Багима</li>
-        <li><a href="https://macromir-photo.tilda.ws/#rec906582418">Мой сайт</a></li>
-    </ul>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pacifico&display=swap" rel="stylesheet">
-   </main>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Pacifico&display=swap" rel="stylesheet">
+    </div>
+</main>
 
 <footer>
     <h3>г.Дубна, 2025г.</h3>
